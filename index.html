@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/src/css/estilos.css">
+    <link rel="stylesheet" href="/src/css/responsivo.css">
     <title>Playstation Store</title>
 </head>
 
@@ -18,13 +19,14 @@
         <div class="navbar">
             <img class="logo" src="/src/imagens/logo.png" alt="imagem logo">
             <nav>
-                <ul>
-                    <li><a class="nav-link">Consoles</a></li>
-                    <li><a class="nav-link">Acessórios</a></li>
-                    <li><a class="nav-link">Controles</a></li>
-                    <li><a class="nav-link">Outros</a></li>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link">Acessórios</a></li>
+                    <li class="nav-li"><a class="nav-link">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link">Outros</a></li>
                 </ul>
             </nav>
+            <img class="menu-icon"src="/src/imagens/menu.png" alt="menu" onclick="showMenu()">
         </div>
 
         <div class="row">
@@ -33,7 +35,7 @@
                 <h3>Wireless Controller for PlayStation</h3>
                 <p>Controle Original</p>
                 <h4>R$ 222,50</h4>
-                <button>Comprar Agora</button>
+                <button class="buy">Comprar Agora <img src="/src/imagens/arrow.png" alt="seta"></button>
             </div>
             <div class="column-2">
                 <img class="controller" src="/src/imagens/controller.png" alt="imagem controle">
@@ -49,6 +51,7 @@
             <img src="/src/imagens/tw.png" alt="twitter">
         </div>
     </div>
+    <script src="/src/javascript/scripts.js"></script>
 </body>
 
 </html>
